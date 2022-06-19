@@ -1,27 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+body {
+    background: rgb(216, 211, 237);
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+}
+html {
+    height: 100%;
+}
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     color: aliceblue;
-    background: black;
+    background-image:url("../img/bg.jpg");
     max-width: 100%;
     height: auto;
     padding: 30px;
 }
-.navegacao {
+header h1 {
+    font-size: 22pt;
+    font-weight: bold;
+    box-shadow: 2px 2px 3px;
+}
+#navegacao {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    width: 200px;
+    
+}
+header nav a{
+    text-decoration: none;
+    font-size: 12pt;
+    color: aliceblue;
+    transition: 200ms;
+
+}
+header nav a :hover{
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+
 }
 main {
     display: flex;
     flex-direction: column;
-    width: 920px;
-    height: auto;
-    margin: 0 50px;
+    max-width: 920px;
+    min-height: calc(100% - 167px);
+    margin: 0 auto;
+    background: ivory;
+    padding: 10px;
+}
+#aplicacao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#conversor{
+    border-radius: 5px;
+    width: 240px;
+    height: 30px;
+
+}
+.entrada {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    max-width: 300px;
+    margin: 10px 0;
+    font-weight: bold;
+
+}
+.saida th{
+    background-color:  #192020;
+    color: #ffffff;
+    border: 1px solid #888888;
+    padding: 5px;
+}
+.saida td{
+    padding-inline: 5px;
+    margin:0 10px;
+    width: auto;
+    border: 1px solid black;
+    text-align: center;
 }
 .tutorial, .texto {
     display: flex;
     flex-direction: column;
+    margin-bottom: 40px;
 }
 ul, li {
     display: flex;
@@ -30,17 +97,59 @@ ul, li {
 }
 
 img{
-
     width: auto;
     min-width: 420px;
-    
+    margin-bottom: 40px;
+    box-shadow: 3px 2px 5px #000000;
+
 }
+button{
+    align-self: center;
+    width: 200px;
+    height: 30px;
+    border-radius:5px ;
+    background-color: #192020;
+    box-shadow: 2px 3px 5px #000000;
+    margin: 25px 0;
+    color: aliceblue;
+
+    transition: 500ms;
+}
+button:hover{
+    width: 240px;
+}
+button a{
+    font-size: 15px;
+    text-decoration: none;
+    color: aliceblue;
+}
+#video {
+    margin: 50px auto;
+}
+
 footer {
     color: aliceblue;
-    background: black;
+    background-image:url("../img/bg.jpg");
     width: 100%;
-    height: 50px;
+    height: 100px;
     text-align: center;
     font-size: 18pt;
 
+}
+#rodape{
+   padding: 15px;
+}
+#copy{
+    font-size: 0.5em;
+}
+@media screen and (max-width: 480px) {
+   iframe, body, header, footer{
+    max-width: 100%;
+   }
+    h1 {
+        text-align: center;
+    }
+    nav {
+        position: static;
+    }
 }
