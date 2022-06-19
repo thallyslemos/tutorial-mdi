@@ -1,0 +1,62 @@
+<!DOCTYPE html5>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MDI</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <h1>M.D.I.</h1>
+        </div>
+        <nav id="navegacao">
+            <a href="index.html"> <p>  Tutorial</p></a>
+            <a href="soma.html"><p>Soma</p></a>
+            <a href="conversor.html"><p>Conversor</p></a>
+        </nav>
+    </header>
+    <main>
+        <div class="tutorial">
+            <h2>Conversão de bases</h2>
+            <p>Inserir aqui trechos da apostila sobre o conteúdo, exemplos, exercicios e etc</p>
+        </div>
+        <div id="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/vv5k3Q3kRGA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="tutorial">
+            <h2>Aplicação desenvolvida com JavaScript</h2>
+            <p>Explicação da aplicação, como funciona, o que faz, etc.</p>
+        </div>        
+        <div id="aplicacao">
+            <div class="entrada">
+                <label for="conversor">Conversor de Números Decimais </label>
+                <input id="conversor" name="conversor" type="number" placeholder="Insira um número Decimal">
+                <button id="botao-calc" >Converter</button>
+            
+            </div>
+            <div class="saida">
+                <table>
+                    <th>Binário</th>
+                    <th>Octal</th>
+                    <th>Hexadecimal</th>
+                    <tr>
+                        <td id="dec"></td>
+                        <td id="oct"></td>
+                        <td id="hex"></td>
+                    </tr>
+                    
+                </table>
+            </div>
+            <script src="js/conversor-decimal.js"></script>
+        </div>
+    </main>
+    <footer>
+        <div id="rodape"></div>
+        <p>Protótipo do projeto</p>
+        <p id="copy">Desenvolvido por Thallys Viana Lemos</p>
+    </footer>
+</body>

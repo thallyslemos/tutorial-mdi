@@ -1,0 +1,37 @@
+<!DOCTYPE html5> <!-- Declarando que o documeto é do tipo HTML -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MDI</title>
+</head>
+<body>
+    <script>
+        //Inserindo JavaScript no documento HTML
+
+        alert("Esse é um programa que soma dois números inteiros.")
+        /* O comando "alert("mensagem")" mostra uma a mensagem dentro 
+        dos parenteses em um pop-up no navegador */
+
+        var n1 = parseInt(prompt("Digite o primeiro número: "))
+        /* A variável n1 foi declarada e receberá um número inteiro
+        que será digitado pelo usário em um pop-up do tipo prompt*/
+
+        var n2 = parseInt(prompt("Digite o segundo número: "))
+        // Segue o padrão da linha de cima
+
+        var soma = n1 + n2
+        /* A variável soma recebe a soma dos valores inseridos nas
+        variáveis n1 e n2 */
+
+        document.write(soma)
+        /* O comando "write(conteudo)" escrave o conteúdo dentro 
+        dos parenteses no documento HTML*/
+        document.write('<p>Clique <a href="index.html">aqui</a> para voltar para o site!</p>')
+
+    </script>
+    
+</body>
+</html>
