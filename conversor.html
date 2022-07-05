@@ -15,21 +15,68 @@
         </div>
         <nav id="navegacao">
             <a href="index.html"> <p>  Tutorial</p></a>
-            <a href="soma.html"><p>Soma</p></a>
             <a href="conversor.html"><p>Conversor</p></a>
         </nav>
     </header>
     <main>
-        <div class="tutorial">
-            <h2>Conversão de bases</h2>
-            <p>Inserir aqui trechos da apostila sobre o conteúdo, exemplos, exercicios e etc</p>
+        <div class="conteudo-texto">
+            <h2>Conversão de Bases Numéricas</h2>
+            <p>As conversões numéricas são utilizadas em muitos casos na computação. Isso porque nós somos acostumados com a base numérica decimal (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, ...), mas no mundo da tecnologia digital os dispositivos eletrônicos trabalham em baixo nível com a base numérica binária (0 ou 1), pois os números binários são facilmente representados na eletrônica através de pulsos elétricos. Além desses dois, as bases numéricas octal e hexadecimal também são muito utilizadas pela fácil representação.</p>
+            <p>Exemplo:</p>
+            <div >
+                <table class="tabela-exemplo">
+                    <th>Binária(2)</th>
+                    <th class="octal">Octal(8)</th>
+                    <th>Decimal(10)</th>
+                    <th class="hexa">Hexadecimal(16)</th>
+                    <tr>
+                        <td>11</td>
+                        <td class="octal">3</td>
+                        <td>3</td>
+                        <td class="hexa">3</td>
+                    </tr>
+                    <tr>
+                        <td>1010</td>
+                        <td class="octal">12</td>
+                        <td>10</td>
+                        <td  class="hexa">A</td>
+                    </tr>
+                    <tr>
+                        <td>100101101</td>
+                        <td class="octal">455</td>
+                        <td>301</td>
+                        <td class="hexa">12D</td>
+                    </tr>
+                    <tr>
+                        <td>10101100011</td>
+                        <td class="octal">2543</td>
+                        <td>1379</td>
+                        <td class="hexa">563</td>
+                    </tr>
+                </table>
+            </div>
+            <p>Repare que quanto maior a base, o número de símbolos usados para representar o mesmo valor será menor que nas bases menores, é isso que facilita a digitação e memorização e processamento dos valores por um computador. </p>
+            <h2>Bases Numéricas , outro exemplo: </h2>
+            <p>Um sistema de numeração (ou sistema numérico), é um sistema em que um conjunto de números é representado por numerais de uma forma consistente por meio de uma base numérica. Esperamos que em um sistema numérico:</p>
+            <ul id="lista-exemplo">
+                <li>Representa uma grande quantidade de números úteis (ex.: todos os números inteiros, ou todos os números reais);</li>
+                <li>Dê a cada número representado uma única descrição (ou pelo menos uma representação padrão);</li>
+                <li>Reflita as estruturas algébricas e aritméticas dos números.</li>
+            </ul>   
+            <p>Os sistemas numericos utilizados na área da computação: sistema decimal, sistema bińario, sistema octal e o sistema hexadecimal.</p>
+            <p>Consideremos a seguinte definição:</p>
+            <img src="img/ex1.jpg">
+            <p>Exemplo:</p>
+            <img src="img/ex2.jpg">
+            <p>Imagens retiradas da <a href="https://allanarquivos.files.wordpress.com/2020/09/apostila-de-matematica-discreta-i.pdf">apostila</a></p>
+            <p>Segue o conteúdo em vídeo do assunto:</p>
         </div>
         <div id="video">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/vv5k3Q3kRGA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div class="tutorial">
             <h2>Aplicação desenvolvida com JavaScript</h2>
-            <p>Explicação da aplicação, como funciona, o que faz, etc.</p>
+            <p>Aqui temos um programa integrado na página que permite ao usuário inserir um numero decimal qualquer e ter o retorno do correspondente nas bases binárias, octal e decimal:</p>
         </div>        
         <div id="aplicacao">
             <div class="entrada">
@@ -55,8 +102,9 @@
         </div>
     </main>
     <footer>
-        <div id="rodape"></div>
-        <p>Protótipo do projeto</p>
-        <p id="copy">Desenvolvido por Thallys Viana Lemos</p>
+        <div id="rodape">
+            <p>Matemática Discreta 2022.1</p>
+            <p id="copy">Desenvolvido por Thallys Viana Lemos</p>
+        </div>
     </footer>
 </body>
